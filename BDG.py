@@ -38,7 +38,7 @@ xy=(
     (50,260)
 )
 
-set_img(1)
+set_img(4)
 
 draw.text((90,180), "Bom Dia", font=fnt[randint(0,7)], fill=(randint(0,250),randint(0,250),randint(0,250)),stroke_width=1)
 blurImage = img.filter(ImageFilter.BoxBlur(radius=randint(0,30)))
