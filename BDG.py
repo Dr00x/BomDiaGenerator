@@ -9,7 +9,9 @@ ims = [
     Image.open(f"{os.path.dirname(__file__)}\R\A4.png"),
     Image.open(f"{os.path.dirname(__file__)}\R\A5.png"),
     Image.open(f"{os.path.dirname(__file__)}\R\A6.png"),
-    Image.open(f"{os.path.dirname(__file__)}\R\A7.png")
+    Image.open(f"{os.path.dirname(__file__)}\R\A7.png"),
+    Image.open(f"{os.path.dirname(__file__)}\R\A8.png"),
+    Image.open(f"{os.path.dirname(__file__)}\R\A9.png")
 ]
 
 img = Image.new('RGBA', (400, 400), color = (randint(0,255),randint(0,255),randint(0,255)))
@@ -19,7 +21,8 @@ def set_img(valor):
     i = 0
     while i <= valor - 1:
         i = i+1
-        img.paste(ims[randint(0,6)],(randint(0,290),randint(0,290)))
+        m1 = ims[randint(0,8")]
+        img.paste(m1,(randint(0,290),randint(0,290)),mask=m1)
 
 fnt = [
     ImageFont.truetype(f"{os.path.dirname(__file__)}\F\ARIAL.TTF",randint(60,60)),
