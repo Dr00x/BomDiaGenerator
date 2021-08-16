@@ -21,7 +21,7 @@ def set_img(valor):
     i = 0
     while i <= valor - 1:
         i = i+1
-        m1 = ims[randint(0,8")]
+        m1 = ims[randint(0,8)]
         img.paste(m1,(randint(0,290),randint(0,290)),mask=m1)
 
 fnt = [
